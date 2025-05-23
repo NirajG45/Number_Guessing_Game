@@ -1,55 +1,65 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f3f4f6;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
     text-align: center;
-    padding-top: 60px;
-    color: #333;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #1d4ed8;
-    margin-bottom: 20px;
+    color: #2563eb;
+    margin-bottom: 10px;
 }
 
-form {
-    margin: 20px auto;
-    display: inline-block;
+.instruction {
+    color: #6b7280;
+    margin-bottom: 20px;
 }
 
 input[type="number"] {
     padding: 10px;
-    width: 200px;
-    font-size: 16px;
+    width: 70%;
     border: 2px solid #d1d5db;
     border-radius: 6px;
-    outline: none;
+    font-size: 16px;
 }
 
-button {
+button, .btn {
     padding: 10px 20px;
-    background-color: #1d4ed8;
+    margin-top: 15px;
+    background-color: #2563eb;
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 10px;
-}
-
-button:hover {
-    background-color: #2563eb;
-}
-
-p {
-    font-size: 18px;
-    margin-top: 20px;
-    color: #111827;
-}
-
-a {
-    display: inline-block;
-    margin-top: 20px;
-    color: #dc2626;
+    transition: background-color 0.3s ease;
     text-decoration: none;
-    font-weight: bold;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #1d4ed8;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
 }
