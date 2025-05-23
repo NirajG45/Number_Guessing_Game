@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🎯 Guess the Number (1-100)</h1>
+    <form method="POST">
+        <input type="number" name="guess" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p>{{ message }}</p>
+    <a href="/reset">🔄 Restart Game</a>
+</body>
+</html>
